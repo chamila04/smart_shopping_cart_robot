@@ -5,8 +5,8 @@
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // Replace with your network credentials
-const char* ssid     = "Chamila's Galaxy A32";
-const char* password = "chamila321";
+const char* ssid     = "wifi SSID";
+const char* password = "wifi password";
 
 // Server port
 WiFiServer server(80);

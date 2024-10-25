@@ -2,8 +2,8 @@
 #include <WiFi.h>
 #include <esp32cam.h>
  
-const char* WIFI_SSID = "Chamila's Galaxy A32";
-const char* WIFI_PASS = "chamila321";
+const char* WIFI_SSID = "wifi SSID";
+const char* WIFI_PASS = "wifi password";
  
 WebServer server(80);
  
@@ -55,6 +55,8 @@ void handleJpgMid()
  
 void  setup(){
   Serial.begin(115200);
+  WiFi.setHostname("esp32_cam");
+
   Serial.println();
   {
     using namespace esp32cam;
